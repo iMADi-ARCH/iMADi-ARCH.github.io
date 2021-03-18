@@ -1,21 +1,15 @@
 
-// // let heading = document.getElementById("main-heading");
+let nav_button = document.querySelector(".nav-button");
+let nav_bar = document.querySelector("nav");
 
-// // heading.style.height = screen.availHeight + "px";
+nav_bar.style.transform = "translateX(-225px)";
 
-// // console.log();
-
-// // detecting android
-// if(screen.width < 540) {
-//     let grid = document.getElementsByClassName("grid-container");
-//     // console.log(contents);
-//     for (i = 0; i < grid.length; i++) {
-//         grid[i].style.display = "inline";
-//     }
-
-//     let headings = document.getElementsByClassName("heading");
-//     // console.log(contents);
-//     for (i = 0; i < headings.length; i++) {
-//         headings[i].style.fontSize = "2.5em";
-//     }
-// }
+nav_button.onclick = function() {
+    if (nav_bar.style.transform == "translateX(-225px)") {
+        nav_bar.style.transform = "translateX(0)";
+        nav_button.style.margin = "5px 240px";
+    } else {
+        nav_bar.style.transform = "translateX(-225px)";
+        nav_button.style.margin = "5px 15px";
+    }
+}

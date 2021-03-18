@@ -15,15 +15,36 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.nav-button {
+    color: white;
+    display: block;
+    position: fixed;
+    top: 0;
+    padding: 0.75em 1em;
+    margin: 5px 15px;
+    background-color: #2D6A4F;
+    box-shadow: 0 0 0.35em #081C15;
+    text-shadow: 0 0 0.35em #081C15;
+    transition: 1s margin;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */  
+    cursor: pointer;
+}
+
 nav {
     padding: 1em;
-    width: 100%;
-    position: sticky;
+    width: 200px;
+    min-width: 200px;
+    height: 100%;
+    position: fixed;
     top: 0;
-    text-align: center;
-    background-color: rgb(10, 10, 10);
+    /* text-align: center; */
+    background-color: #2D6A4F;
     box-shadow: 0 0 0em #081C15;
-    transition: box-shadow 1s;
+    transform: translateX(-225px);
+    transition: box-shadow 1s, transform 1s;
 }
 
 nav:hover {
@@ -33,6 +54,7 @@ nav:hover {
 .nav-item {
     text-decoration: none;
     padding: 1em;
+    line-height: 5em;
     color: #D8F3DC;
     text-shadow: 0 0 0.2em #D8F3DC;
 }
@@ -105,19 +127,19 @@ cut {
     background-size: contain;
 }
 
-a.logo {
+.footer a {
     text-decoration: none;
 }
 
-a:link {
+.footer a:link {
     color: #E76F51;
 }
 
-a:visited {
+.footer a:visited {
     color: #E9C46A;
 }
 
-a:hover {
+.footer a:hover {
     color: #2A9D8F;
 }
 
@@ -125,8 +147,8 @@ img.logo {
     vertical-align: middle;
     /* width: 2em;
     height: 2em; */
-    margin: 0.25em 5em;
-    display: inline-block;
+    /* margin: 0.25em 5em;
+    display: inline-block; */
 }
 
 .grid-container {
